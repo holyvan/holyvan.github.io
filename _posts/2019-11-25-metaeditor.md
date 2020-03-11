@@ -6,8 +6,7 @@ tags: editor
 author: joshua
 ---
 ## [创建自动交易和技术指标的指定编辑器](https://www.metatrader4.com/zh/automated-trading/metaeditor)
-## 创建自动交易和技术指标的指定编辑器
-```
+```text
 MQL4 程序在内置MetaEditor开发。它是一个便捷且通用的工具，用于开发EA交易，自定义指标，脚本和平台中使用的任何复杂的程序库。MetaTrader 4中现有的应用程序自动出现，并可以立即启动。
 
 内置MetaEditor用于自动交易，技术指标和脚本的开发
