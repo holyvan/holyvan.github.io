@@ -19,7 +19,9 @@ description: docker
 
 #### Shell 格式
 
+```
 <instruction> <command>
+```
 
 ```dockerfile
 RUN apt-get install python3
@@ -48,7 +50,9 @@ Hello, Cloud Man
 
 #### Exec 格式
 
+```
 <instruction> ["executable", "param1", "param2", ...]
+```
 
 ```dockerfile
 RUN ["apt-get", "install", "python3"]
