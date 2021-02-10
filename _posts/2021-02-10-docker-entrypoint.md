@@ -30,7 +30,7 @@ ENTRYPOINT echo "Hello world"
 ```
 
 
-当指令执行时，shell 格式底层会调用 ==/bin/sh -c <command>==
+当指令执行时，shell 格式底层会调用 **`/bin/sh -c <command>`**
 
 Dockerfile
 
@@ -60,7 +60,7 @@ CMD ["/bin/echo", "Hello world"]
 ENTRYPOINT ["/bin/echo", "Hello world"]
 ```
 
-当指令执行时，==直接调用 <command>，不会被 shell 解析==
+当指令执行时，**`直接调用 <command>，不会被 shell 解析`**
 
 Dockerfile
 
@@ -122,12 +122,12 @@ RUN apt-get update && apt-get install -y \
 
 ### CMD
 
-设置容器启动后**默认执行的命令及其参数**，此命令会在容器启动且 **==docker run 没有指定其他命令时运行==**
+设置容器启动后**默认执行的命令及其参数**，此命令会在容器启动且 **`docker run 没有指定其他命令时运行`**
 
 如果在使用`docker run` 启动容器时使用了**命令行参数**，那么dockerfile 中的**cmd 指令将无效**，CMD 被 `docker run` 后面跟的命令行参数**替换**
 
 1. 如果 docker run 指定了其他命令，CMD 指定的默认命令将**被忽略**
-2. 如果 Dockerfile 中有**多个 CMD 指令**，只有==**最后一个 CMD 有效**==
+2. 如果 Dockerfile 中有**多个 CMD 指令**，只有**最后一个 CMD 有效**
 
 CMD 有三种格式：
 
